@@ -1,0 +1,9 @@
+*.zip
+*.bin
+/build
+*.raw
+*.log
+# logs/
+ArduCopter/logs/
+*.BIN
+# *.bin
