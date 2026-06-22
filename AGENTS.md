@@ -1,5 +1,5 @@
 # AI Contribution Guidelines for ArduPilot
-
+not temp
 This document provides guidelines for AI assistants (ChatGPT, Claude, Copilot, Gemini, or any LLM-based tool) contributing code to the ArduPilot project. These rules supplement the existing [CONTRIBUTING.md](.github/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — both of which apply fully to AI-assisted contributions.
 
 ArduPilot is safety-critical autopilot software controlling real vehicles. Every change must be correct, tested, and reviewable by human maintainers.
