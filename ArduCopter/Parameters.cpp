@@ -42,8 +42,8 @@ const AP_Param::Info Copter::var_info[] = {
 
 
 
-    GSCALAR(dive_target_distance_m,"DIVE_DIST",  20),
-    
+    GSCALAR(dive_target_distance_m_x,"DIVE_DIST_X",  120),
+    GSCALAR(dive_target_distance_m_y,"DIVE_DIST_Y",  120),
 
     // SYSID_THISMAV was here
 

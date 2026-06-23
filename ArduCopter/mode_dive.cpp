@@ -24,8 +24,8 @@ bool ModeDive::init(bool ignore_checks)
         dive_target_pos_ned_m = dive_start_pos_ned_m;
 
         // Move target north by DIVE_DIST meters
-        dive_target_pos_ned_m.x += g.dive_target_distance_m;
-
+        dive_target_pos_ned_m.x += g.dive_target_distance_m_x;
+        dive_target_pos_ned_m.y += g.dive_target_distance_m_y;
         gcs().send_text(
             MAV_SEVERITY_INFO,
             "DIVE START SAVED");
@@ -98,7 +98,7 @@ void ModeDive::run()
     // STEP 7: P Controller
     // -----------------------------------------------------------
     float yaw_rate_cmd =
-        radians(yaw_error_deg * 0.1f);
+        -radians(yaw_error_deg * 0.5f);
 
     // -----------------------------------------------------------
     // STEP 8: Limit yaw rate

@@ -394,8 +394,8 @@ public:
         k_param_throw_altitude_ascend,
 
 
-        k_param_dive_target_distance_m,
-
+        k_param_dive_target_distance_m_x,
+        k_param_dive_target_distance_m_y,
         // the k_param_* space is 9-bits in size
         // 511: reserved
     };
@@ -405,7 +405,8 @@ public:
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
 #if MODE_DIVE_ENABLED
-    AP_Float dive_target_distance_m;
+    AP_Float dive_target_distance_m_x;
+    AP_Float dive_target_distance_m_y;
 #endif
 
 #if MODE_RTL_ENABLED
@@ -703,7 +704,8 @@ public:
     AP_Float guided_timeout;
 #endif
 #if MODE_DIVE_ENABLED
-    AP_Float dive_target_distance_m;
+    AP_Float dive_target_distance_m_x;
+    AP_Float dive_target_distance_m_y;
 #endif
 
     AP_Int8                 surftrak_mode;
